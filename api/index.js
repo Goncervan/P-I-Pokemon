@@ -19,10 +19,13 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-
+const { getTypes } = require('./src/utils/getTypes')
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
-  });
+    console.log('Listening at 3001'); // eslint-disable-line no-console
+  })})
+.then(() => {
+  getTypes(); //Nos traemos los Types y los guardamos en la base de datos
+  console.log("Cargando Types...")
 });

@@ -1,0 +1,42 @@
+.principal{
+    width: 100%;
+    background: #1a1a1a;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+.imgContainer{
+    justify-self: center;
+}
+.input{
+    width: 150px;
+    height: 25px;
+    align-self: center;
+    justify-self: center;
+    border: 0;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+.input:focus{
+    outline: none;
+}
+.btn{
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    color: black;
+    background: #fff;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .btn{
+        margin-right: 5px;
+    }
+}

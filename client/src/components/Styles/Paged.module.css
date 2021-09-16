@@ -1,0 +1,31 @@
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.list{
+    display:inline-flex;
+    align-items: center;
+    flex-direction:row ;
+    justify-content: space-evenly; 
+    margin:10px 8px;
+}
+.btn{
+    background: black;
+    color: #fff;
+    border: 0;
+    width: 25px;
+    height: 30px;
+    cursor: pointer;
+    border-radius:25px;
+    transition: all .3s;
+}
+.btn:hover{
+    background: #fff;
+    color: black;
+}
+.list:nth-child(6){
+    display: none;
+}
