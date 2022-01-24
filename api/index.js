@@ -22,7 +22,7 @@ const { conn } = require('./src/db.js');
 const { getTypes } = require('./src/utils/getTypes')
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
+  server.listen(process.env.PORT, () => {
     console.log('Listening at 3001'); // eslint-disable-line no-console
   })})
 .then(() => {

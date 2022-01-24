@@ -68,7 +68,7 @@
 .pokemones{
     height: auto;
     min-height: 67vh;
-    width: 70vw;
+    width: 60vw;
     padding-top: 10px;
     background: rgb(255,131,0);
     background: linear-gradient(180deg, rgba(255,131,0,1) 39%, rgba(255,171,0,1) 63%);

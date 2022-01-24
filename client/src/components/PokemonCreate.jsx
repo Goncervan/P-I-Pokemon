@@ -32,6 +32,9 @@ export default function PokemonCreate() {
         if (!input.name) {
             err.name = 'Nombre es un campo obligatorio'
         }
+        if(input.type.length === 3){
+            err.type = 'Solo podes elegir 3 tipos'
+        }
         return err;
     } 
     function handleChange(e) {

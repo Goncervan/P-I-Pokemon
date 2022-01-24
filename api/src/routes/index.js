@@ -22,7 +22,7 @@ router.get('/pokemons', async (req, res) => {
         const pokemonesDb = resultadoDb.map(ob => {
             const pokemon = {
                 id: ob.id,
-                name: ob.name,
+                name: ob.name.toLowerCase(),
                 hp: ob.hp,
                 attack: ob.attack,
                 defense: ob.defense,
@@ -69,7 +69,7 @@ router.get('/pokemons?name=', async (req, res) => {
                 }
             })
         const result = pokemonsApi.concat(resultadoDb)
-        const found = result.filter(obj => obj.name === name)
+        const found = result.filter(obj => obj.name.includes(name))
         res.json(found)
     }catch(error){
         console.log(error)

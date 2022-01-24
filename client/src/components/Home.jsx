@@ -127,7 +127,10 @@ export default function Home() {
                                     </Link>
                                 </div>
                             );
-                        }) : null
+                        }) :
+                            <div>
+                                <p>No hay pokemones cargados</p>
+                            </div>
                     }
                 </div>
             </div>
